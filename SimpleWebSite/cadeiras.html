@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Esctec::Home</title>
+        <meta charset="utf-8" />
+        <link href="estilo.css" rel="stylesheet">
+        <script type="text/javascript">
+            /* função para carregar imagem popup*/
+            function imageLoad(img_address)
+            {
+                newpopupWindow = window.open ('', 'Esctec::Cadeiras', "width=600 height=600");
+                newpopupWindow.document.write ("<img src='" + img_address +"'width=500>");
+            } 
+        </script>
+    <body>
+        <header><img id="logo" src="imgs/logo.jpg" /><h1>Esctec Brasil</h1></header>
+        <nav><h4>
+        
+        <!-- MENU DROPDOWN -->
+        <ul class="menu">
+                <li><a href="index.html">A empresa</a>
+                    <ul>
+                        <li><a href="missao.html">Missao</a></li>
+                        <li><a href="visao.html">Visao</a></li>
+                        <li><a href="valores.html">Valores</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Produtos</a>
+                    <ul>
+                        <li><a href="mesas.html">Mesas</a></li>
+                        <li><a href="cadeiras.html">Cadeiras</a></li>
+                        <li><a href="diversos.html">Diversos</a></li>
+                    </ul>
+                </li>
+            <li><a href="pedido.html">Pedidos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul></h4>
+        
+        </nav>
+    <body>
+        <table style="width:100%">
+            <tr>
+                <td id="prod_fotos"><a href="javascript:imageLoad('cadeiras/prod1.jpg')"><img src="cadeiras/prod1.jpg" width=200 /></a></td>
+                <td id="prod_fotos"><a href="javascript:imageLoad('cadeiras/prod2.jpg')"><img src="cadeiras/prod2.jpg" width=200 /></a></td>		
+                <td id="prod_fotos"><a href="javascript:imageLoad('cadeiras/prod3.jpg')"><img src="cadeiras/prod3.jpg" width=200 /></a></td>
+            </tr>        
+            <tr>
+                <td id="descricao">Descrição do Produto 1...</td>
+                <td id="descricao">Descrição do Produto 2...</td>		
+                <td id="descricao">Descrição do Produto 3...</td>
+            </tr>
+            <tr>
+                <td id="prod_fotos"><a href="javascript:imageLoad('cadeiras/prod4.jpg')"><img src="cadeiras/prod4.jpg" width=200 /></a></td>
+                <td id="prod_fotos"><a href="javascript:imageLoad('cadeiras/prod5.jpg')"><img src="cadeiras/prod5.jpg" width=200 /></a></td>		
+                <td id="prod_fotos"><a href="javascript:imageLoad('cadeiras/prod6.jpg')"><img src="cadeiras/prod6.jpg" width=200 /></a></td>
+            </tr>        
+            <tr>
+                <td id="descricao">Descrição do Produto 1...</td>
+                <td id="descricao">Descrição do Produto 2...</td>		
+                <td id="descricao">Descrição do Produto 3...</td>
+            </tr>
+        </table>
+    </body>
+    <footer><h4>&copy; 2013 ESCTEC Brasil - fone (11) 1234-1234 | faleconosco@esctecbrasil.com.br</h4></footer>
+</html>

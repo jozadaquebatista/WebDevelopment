@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Esctec::Home</title>
+        <meta charset="UTF-8">
+        <link href="form_pedido.css" rel="stylesheet" />
+        <link href="pedido-style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header><a href="index.html"><img id="logo" src="imgs/logo.jpg" /><h1>Esctec Brasil</h1></a></header>
+        <nav><h4>
+        
+        <!-- MENU DROPDOWN -->
+        <ul class="menu">
+                <li><a href="index.html">A empresa</a>
+                    <ul>
+                        <li><a href="missao.html">Missao</a></li>
+                        <li><a href="visao.html">Visao</a></li>
+                        <li><a href="valores.html">Valores</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">Produtos</a>
+                    <ul>
+                        <li><a href="mesas.html">Mesas</a></li>
+                        <li><a href="cadeiras.html">Cadeiras</a></li>
+                        <li><a href="diversos.html">Diversos</a></li>
+                    </ul>
+                </li>
+            <li><a href="pedido.html">Pedidos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul></h4>
+        
+        </nav>
+        <body>
+            <fieldset><legend>Pedidos</legend>
+                <form action="#" method="POST">
+                    <p>Vendedor</p>
+                    <div id="main">&nbsp;<select>
+                        <option value="joao" selected>Joao</option>
+                        <option value="marcos">Marcos</option>
+                        <option value="estevao">Estevão</option>
+                        <option value="anabelle">Anabelle</option>
+                    </select>&nbsp;
+                    
+                    <input type="text" placeholder="Nome do Vendedor" required />
+                    <br />
+                    <input type="text" placeholder="Empresa" required />
+                    <input type="text" placeholder="CNPJ" required /><br />
+                    <input type="text" placeholder="Endereço" required />
+                    <input type="text" placeholder="Cidade" required />
+                    <input id="prod_qtde" type="text" maxlength=2 placeholder="UF" required /><br />
+                    <input type="text" placeholder="Telefone" required />
+                    <input type="email" placeholder="Email" required /></div>
+                    
+                    <p>Produtos</p>
+                    <p>Selecione o produto</p>
+                    
+                    <select>
+                        <option value="prod_mesa" selected=""> 10 - Mesa </option>
+                        <option value="prod_cadeira"> 20 - Cadeira </option>
+                        <option value="prod_outro"> 30 - Outro </option>
+                    </select>
+                    
+                    <input type="text" placeholder="descrição ..." required />
+                    <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde" required />
+                    <input id="p_unitario" type="text" maxlength="8" placeholder="Valor Unitário" required />
+                    <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item" required />
+                    <br />
+                    
+                    <select>
+                        <option value="prod_mesa" selected=""> 10 - Mesa </option>
+                        <option value="prod_cadeira"> 20 - Cadeira </option>
+                        <option value="prod_outro"> 30 - Outro </option>
+                    </select>
+                    
+                    <input type="text" placeholder="descrição ..." />
+                    <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde" />
+                    <input id="p_unitario" type="text" maxlength="8" placeholder="Valor Unitário" />
+                    <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item" />
+                    <br />
+                    <select>
+                        <option value="prod_mesa" selected=""> 10 - Mesa </option>
+                        <option value="prod_cadeira"> 20 - Cadeira </option>
+                        <option value="prod_outro"> 30 - Outro </option>
+                    </select>
+                    
+                    <input type="text" placeholder="descrição ..." />
+                    <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde" />
+                    <input id="p_unitario" type="text" maxlength="8" placeholder="Valor Unitário" />
+                    <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item" />
+                    <br />
+                    <select>
+                        <option value="prod_mesa" selected=""> 10 - Mesa </option>
+                        <option value="prod_cadeira"> 20 - Cadeira </option>
+                        <option value="prod_outro"> 30 - Outro </option>
+                    </select>
+                    
+                    <input type="text" placeholder="descrição ..." />
+                    <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde" />
+                    <input id="p_unitario" type="text" maxlength="8" placeholder="Valor Unitário" />
+                    <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item" />
+                    <br />
+                    <select>
+                        <option value="prod_mesa" selected=""> 10 - Mesa </option>
+                        <option value="prod_cadeira"> 20 - Cadeira </option>
+                        <option value="prod_outro"> 30 - Outro </option>
+                    </select>
+                    
+                    <input type="text" placeholder="descrição ..." />
+                    <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde" />
+                    <input id="p_unitario" type="text" maxlength="8" placeholder="Valor Unitário" />
+                    <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item" />
+                    <br />
+                    
+                    <br /><br />
+                    <input type="submit" id="btn" /><input type="reset"id="btn" />
+                </form>
+            </fieldset>
+        </body>
+        <footer><h4>&copy; 2015 ESCTEC Brasil - fone (11) 1234-1234 | faleconosco@esctecbrasil.com.br</h4></footer>
+    </body>
+</html>

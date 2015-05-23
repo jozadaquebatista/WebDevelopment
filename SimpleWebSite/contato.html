@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Esctec::Home</title>
+        <meta charset="utf-8" />
+        <link href="estilo.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header><a href="index.html"><img id="logo" src="imgs/logo.jpg" /><h1>Esctec Brasil</h1></a></header>
+        <nav><h4>
+            <ul class="menu">
+                <li><a href="index.html">A empresa</a></li>
+                <li><a href="index.html">Produtos</a></li>
+                <li><a href="pedido.html">Pedidos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul></h4>
+        </nav>
+        <body>
+            <p id="form_contato">
+            <fieldset><legend>Contato</legend>
+			<form action="#" method="POST"><br />
+				Nome: <br />
+				<input id="campo_form" type="text" autofocus required /><br />
+				Empresa: <br />
+				<input id="campo_form" type="text" required /><br />
+				Cidade: <br />
+				<input id="campo_form" type="text" required /><br />
+				Telefone: <br />
+				<input id="campo_form" type="tel" required /><br /><br />
+				<input id="campo_form" type="email" placeholder="seu email ..." required/><br /><br />
+				<select>
+					<option value="logistico" selected>dep. de Vendas</option>
+					<option value="rh">dep. de RH</option>
+					<option value="vendas">dep. Logístico</option>
+					<option value="financeiro">dep. Financeiro</option>
+				</select><br /><br />
+				<h3>Como conheceu a ESCTEC?</h3><br />
+				<div id="chkbox">
+				<input type="checkbox" class="chkbox" />Indicação<br />
+				<input type="checkbox" class="chkbox" />Email<br />
+				<input type="checkbox" class="chkbox" />Buscadores<br /><br />
+				</div>
+				<textarea id="campo_form" maxlength="500" placeholder="Coloque aqui seu pedido ..."  rows="40" cols="65" required></textarea><br />
+				<input id="form_btn" type="submit" name="Enviar" class="btnform" />
+				<input id="form_btn" type="reset" name="Limpar" class="btnform" />
+			</form>
+		</fieldset></p>
+        </body>
+        <footer><h4>&copy; 2015 ESCTEC Brasil - fone (11) 1234-1234 | faleconosco@esctecbrasil.com.br</h4></footer>
+    </body>
+</html>

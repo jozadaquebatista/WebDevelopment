@@ -1,0 +1,138 @@
+<style>
+    *
+    {
+        margin: .3%;
+    }
+    legend
+    {
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    fieldset
+    {
+        border: 3px dashed #ddd;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px;
+    }
+    fieldset #prod_qtde
+    {
+        width: 35px;
+    }
+    fieldset #p_unitario
+    {
+        width: 90px;
+    }
+    fieldset #p_total
+    {
+        width: 110px;
+    }
+    select
+    {
+        width: 180px;
+    }
+    fieldset input, select
+    {
+        background-color: #eee;
+        color: #000;
+        border: 1px solid #bbb;
+        height: 5%;
+        width: 20%;
+        border-radius: 3px;
+        text-align: center;
+        box-shadow: inset 2px 2px 10px #999;
+    }
+    #btn
+    {
+        font-weight: bolder;
+        background-color: #eee;
+        color: #000;
+        border: 1px dotted #000;
+        height: 5%;
+        width: 20%;
+        border-radius: 3px;
+        text-align: center;
+        box-shadow: none;
+    }
+</style>
+
+<fieldset><legend>Pedidos</legend>
+    <form action="#" method="POST">
+        <h4>Vendedor</h4>
+        <select>
+            <option value="joao" selected>Joao</option>
+            <option value="marcos">Marcos</option>
+            <option value="estevao">Estevão</option>
+            <option value="anabelle">Anabelle</option>
+        </select>
+        
+        <input type="text" placeholder="Nome do Vendedor" />
+        <br />
+        <input type="text" placeholder="Empresa" />
+        <input type="text" placeholder="CNPJ" /><br />
+        <input type="text" placeholder="Endereço"/>
+        <input type="text" placeholder="Cidade" />
+        <input id="prod_qtde" type="text" maxlength=2 placeholder="UF" /><br />
+        <input type="text" placeholder="Telefone"/>
+        <input type="email" placeholder="Email"/>
+        
+        <h4>Produtos</h4>
+        <h5>Selecione o produto</h5>
+        
+        <select>
+            <option value="prod_mesa" selected=""> 10 - Mesa </option>
+            <option value="prod_cadeira"> 20 - Cadeira </option>
+            <option value="prod_outro"> 30 - Outro </option>
+        </select>
+        
+        <input type="text" placeholder="descriÃ§Ã£o ..." />
+        <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde" />
+        <input id="p_unitario" type="text" maxlength="8" placeholder="Valor UnitÃ¡rio" />
+        <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item" />
+        <br />
+        <select>
+            <option value="prod_mesa" selected=""> 10 - Mesa </option>
+            <option value="prod_cadeira"> 20 - Cadeira </option>
+            <option value="prod_outro"> 30 - Outro </option>
+        </select>
+        
+        <input type="text" placeholder="descriÃ§Ã£o ...">
+        <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde">
+        <input id="p_unitario" type="text" maxlength="8" placeholder="Valor UnitÃ¡rio">
+        <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item">
+        <br />
+        <select>
+            <option value="prod_mesa" selected=""> 10 - Mesa </option>
+            <option value="prod_cadeira"> 20 - Cadeira </option>
+            <option value="prod_outro"> 30 - Outro </option>
+        </select>
+        
+        <input type="text" placeholder="descriÃ§Ã£o ...">
+        <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde">
+        <input id="p_unitario" type="text" maxlength="8" placeholder="Valor UnitÃ¡rio">
+        <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item">
+        <br />
+        <select>
+            <option value="prod_mesa" selected=""> 10 - Mesa </option>
+            <option value="prod_cadeira"> 20 - Cadeira </option>
+            <option value="prod_outro"> 30 - Outro </option>
+        </select>
+        
+        <input type="text" placeholder="descriÃ§Ã£o ...">
+        <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde">
+        <input id="p_unitario" type="text" maxlength="8" placeholder="Valor UnitÃ¡rio">
+        <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item">
+        <br />
+        <select>
+            <option value="prod_mesa" selected=""> 10 - Mesa </option>
+            <option value="prod_cadeira"> 20 - Cadeira </option>
+            <option value="prod_outro"> 30 - Outro </option>
+        </select>
+        
+        <input type="text" placeholder="descriÃ§Ã£o ...">
+        <input id="prod_qtde" type="text" maxlength="2" placeholder="Qtde">
+        <input id="p_unitario" type="text" maxlength="8" placeholder="Valor UnitÃ¡rio">
+        <input id="p_total" type="text" maxlength="15" placeholder="Valor Total Item">
+        <br /><br />
+        <input type="submit" id="btn" /><input type="reset"id="btn" />
+    </form>
+</fieldset>
