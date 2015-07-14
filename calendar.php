@@ -1,0 +1,1 @@
+<?php $day = time(); echo date('d', $day)." \ "; echo date('m', $day)." \ "; echo date('y', $day)." \ "; ?>
