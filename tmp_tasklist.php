@@ -40,6 +40,17 @@
             to {opacity: 1;}
         }
     
+        textarea
+        {
+            resize: none;
+            border: none;
+            width:100%;
+            height: 300px;
+        }
+        textarea:focus
+        {
+            outline: 0;
+        }
     </style>
     
 </head>
@@ -261,7 +272,6 @@
                                     $priority = 'danger';
 
                                 # FIM VERIFICAÇÃO
-                                
                                 echo ' 
                                     <tr class="text-'.$priority.'">
                                         <td>'.$row[1].'</td>
@@ -279,32 +289,35 @@
                                                 <b><span class="glyphicon glyphicon-trash" /></b>
                                                 </button>
                                             </form>
-                                            
+                                            <form method="POST" action="edit.php">
                                             <!-- Modal Dialog -->
                                             <div class="modal fade" id="'.$row[1].'" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                               <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                   <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                                    <h4 class="modal-title" id="myModalLabel">'.'Task for: '.$row[1].'</h4>
+                                                    <h4 class="modal-title" id="myModalLabel"> Task for: '.$row[1].'</h4>
                                                   </div>
                                                   <div class="modal-body">
                                                     <br /><br />
                                                     <b>task description</b>
-                                                    <br /><p style="text-indent: 10%;">'.$row[3].'</p><br />
+                                                    <br /><textarea style="text-indent: 10%;" name="note" placeholder="'.$row[3].'">'.$row[3].'</textarea><br />
+                                                          <input type="hidden" value="'.$row[0].'" name="id" />
                                                     <br /><br />
                                                     <b>priority</b>
                                                     <br /><p style="text-indent: 10%;">'.$row[4].'</p><br />
                                                   </div>
                                                   <div class="modal-footer">
-                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                                                    <input type="submit" class="btn btn-primary" value="OK" />
+                                                    <!--<input type="submit" class="btn btn-primary" data-dismiss="modal" value="OK" />-->
+                                                    </form>
                                                   </div>
                                                 </div>
                                               </div>
                                             </div>
                                         </td>
                                     </tr>';
-                            } 
+                            }
                         echo '
                             </tbody>
                         </table>';
@@ -313,8 +326,8 @@
                         {
                             $link->query('DELETE FROM task WHERE task.id='.$_POST['delete'].'');
                             $_POST['delete'] = NULL;
-                            echo '<meta HTTP-EQUIV="REFRESH" content="0; url=tmp_tasklist.php" />';
-                            echo '<meta HTTP-EQUIV="REFRESH" content="0; url=tmp_tasklist.php" />';
+                            for($i=0;$i<2;$i++) echo '<meta HTTP-EQUIV="REFRESH" content="0; url=tmp_tasklist.php" />'; # atualiza tela
+                            unset($i);
                         }
 
                         mysqli_close($link); # FECHA A CONEXAO COM O DB
